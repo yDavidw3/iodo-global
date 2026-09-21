@@ -1,0 +1,500 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #F7F7F7 !important;
+    color: #363636;
+}
+header{
+    position: fixed;
+    padding: 12px 150px 0 120px;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    background-color: #3B44F6;
+}
+.ulHeader{
+    text-decoration: none;
+    list-style-type: none;
+}
+.headerItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.menu{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+.logoCentral{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: center;
+}
+.entrarConta{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.contaHoverWrapper{
+    position: relative;
+    display: inline-block;
+}
+.megaPainelConta{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 400px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    margin-top: 10px;
+    z-index: 1050;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-10%, -10%);
+    transition: opacity 0.4s ease, tranform 0.2s ease, visibility 0.4s;
+}
+.contaHoverWrapper:hover .megaPainelConta{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.painelHeader h4{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: center;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 32px;
+    color: #333;
+    letter-spacing: -.2rem;
+}
+.igMark{
+    color: #3B44F6;
+    font-weight: 800;
+}
+.painelHeader p{
+    font-size: 17px;
+    font-weight: 500;
+    color: #363636;
+    margin: 4px 0 15px 0;
+    display: flex;
+    flex-direction: center;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.painelCarrossel{
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.mini-card-item{
+    background-color: #f5f6f7;
+    padding: 15px 10px;
+    border-radius: 8px;
+    min-width: 80px;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 500;
+    height: 100px;
+}
+.painelFooter{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 12px;
+}
+.btnEntrarConta{
+    background-color: #3B44F6;
+    padding: 12px 12px 12px 12px;
+    border: none;
+    border-radius: 8px;
+    width: 140px;
+    transition: 0.4s ease;
+}
+.btnEntrarConta > span{
+    color: #FFFFFF;
+}
+.btnEntrarConta:hover{
+    background-color: #2229B3;
+}
+.btnCriarConta{
+    background-color: transparent;
+    border: 2px solid #3B44F6;
+    padding: 12px 12px 12px 12px;
+    border-radius: 8px;
+    width: 140px;
+    transition: 0.4s ease;
+}
+.btnCriarConta > span{
+    color: #3B44F6;
+}
+.btnCriarConta:hover{
+    border: 2px solid #2229B3;
+    color: #2229B3;
+}
+.btnCriarConta > span:hover{
+    color: #2229B3;
+}
+.contaBtn{
+    border: none;
+    padding: 12px 12px 12px 12px;
+    border-radius: 26px;
+    background-color: #2229B3;
+    cursor: pointer;
+}
+.contaBtn:hover{
+    background-color: #1b2196;
+}
+.contaBtn > span{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+}
+.offcanvas-definition{
+    width: 250px !important;
+}
+.chevronColor{
+    color:#3B44F6;
+}
+.textoMenu{
+    font-size: 17px;
+    color: #8E8E8E;
+}
+.voltaMenu{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.removeUlMark{
+    list-style-type: none;
+    padding-left: 30px;
+}
+.tituloCategoriaMenu{
+    margin-top: 20px;
+    font-size: 17px;
+    color: #363636;
+    font-weight: 700;
+}
+.loginMenu{
+    font-size: 18px;
+    color: #3B44F6;
+    margin-left: 8px;
+    font-weight: 700;
+}
+.listNone{
+    list-style-type: none;
+}
+.singupMenu{
+    font-size: 12px;
+    color: #8E8E8E;
+    margin-left: 30px !important;
+    font-weight: 600;
+}
+.mainContainer{
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin-left: 4.16667%;
+    margin-right: 4.16667%;
+}
+.cardsPrincipais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    gap: 20px;
+    height: 600px;
+    padding: 10px;
+}
+.cardMaior{
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: .5px solid #D9D9D9;
+    height: auto;
+    width: 600px;
+    padding: 24px 48px 0 24px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.cardMaior:hover{
+    background-color: #FCFBFB;
+    border: .5px solid rgba(255, 255, 255, 0.15);
+    filter: drop-shadow(1px 0 3px gray);
+}
+.topicoMateria{
+    font-size: 14px;
+    font-weight: 500;
+}
+.spacerItem{
+    height: 150px;
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.tituloMateria{
+    color: #3B44F6;
+    font-size: 40px;
+    padding-bottom: 12px;
+    font-weight: 700;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.tituloMateria:hover{
+    color: #2229B3;
+}
+.subtituloMateria{
+    color: #AAAAAA;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 1s ease;
+    cursor: pointer;
+}
+.subtituloMateria:hover{
+    color: #363636;
+}
+.conteudoRolavel{
+    height: auto;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+}
+.materias{
+    width: 62%;
+    margin-left: 2.4%;
+}
+.conteudo{
+    background: transparent;
+    height: 250px;
+    width: auto;
+    margin-left: 6.5%;
+    border-bottom: 1.5px solid #AAAAAA;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+.imagemConteudo{
+    width: 380px;
+    height: 220px;
+    border-radius: 12px;
+    margin-top: 1.5%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.spacerText{
+    padding: 10px 30px 0 24px;
+}
+.removeUnderscore{
+    text-decoration: none;
+}
+.tituloConteudo{
+    color: #3B44F6;
+    font-size: 24px;
+    padding-top: 12px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.tituloConteudo:hover{
+    color: #2229B3;
+}
+.subtituloConteudo{
+    color: #3B44F6;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.subtituloConteudo:hover{
+    color: #2229B3;
+}
+li::marker{
+    color: #AAAAAA;
+}
+.guiaRapido{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 6.4%;
+}
+.leiaTambem{
+    background-color: #FFFFFF;
+    height: 550px;
+    width: auto;
+    border-radius: 12px;
+    border: 1px solid #D9D9D9;
+    margin-bottom: 20px;
+}
+.leiaLabel{
+    padding: 24px 24px 0 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D9D9D9;
+}
+.leiaLabel > span{
+    font-weight: 750;
+    font-size: 22px;
+}
+.leiaMateria{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 24px 24px 0 24px;
+    gap: 12px;
+    padding-bottom: 25px;
+    /*border-bottom: 1px solid #D9D9D9;*/
+}
+.imagemMateria{
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.materiaTexto{
+    width: auto;
+    height: auto;
+}
+.materiaLabel{
+    font-size: 17px;
+    color: #3B44F6;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.materiaLabel:hover{
+    color: #2229B3;
+}
+.miniDivisor{
+    background-color: #D9D9D9;
+    height: 1px;
+    width: 85%;
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0 auto;
+}
+.maisLido{
+    background-color: #FFFFFF;
+    height: 1000px;
+    width: auto;
+    border-radius: 12px;
+    border: 1px solid #D9D9D9;
+    margin-bottom: 20px;
+}
+.maisLabel{
+    padding: 24px 24px 0 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D9D9D9;
+}
+.maisLabel > span{
+    font-weight: 750;
+    font-size: 22px;
+}
+.bold{
+    font-weight: 800;
+}
+.maisLidoMateria{
+    display: flex;
+    flex-direction: row;
+    padding: 24px 24px 0 24px;
+    gap: 12px;
+    padding-bottom: 25px;
+    /*border-bottom: 1px solid #D9D9D9;*/
+}
+.ranking{
+    font-weight: 400;
+    font-size: 30px;
+    color: #AAAAAA;
+    margin-top: 15px;
+}
+.maisLidoTexto{
+    width: auto;
+    height: auto;
+}
+.maisLidoLabel{
+    font-size: 17px;
+    color: #3B44F6;
+    transition: 0.4s ease;
+}
+.maisLidoLabel:hover{
+    color: #2229B3;
+}
+footer{
+    background-color: #3B44F6;
+    height: 120px;
+}
+.footerBox{
+    padding: 12px 150px 0 120px;
+}
+.footerSlogan{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.footerLogo{
+    width: 50px;
+    height: 50px;
+    background-color: #AAAAAA;
+}
+.footerSloganLabel{
+    margin-top: 20px;
+}
+.sloganLabel{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+}
+.bottomArea{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.copyText{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.adicionalFooter{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.itemAidiconal{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.titulosAdicionais{
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 400;
+}
+.miniDivisorVertical{
+    margin-top: 5px;
+    height: 15px;
+    width: 1px;
+    background-color: #FFFFFF;
+}

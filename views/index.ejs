@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IG | Sua dose diária</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <header class="headerContainer">
+        <nav>
+            <ul class="ulHeader">
+                <li>
+                    <div class="headerItems">
+                        <a class="menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" href="">
+                            <div>
+                                <span >
+                                    <i class="bi bi-list"></i>
+                                    Menu
+                                </span>
+                            </div>
+                        </a>
+                        <div class="logoCentral">
+                            <img src="../public/img/" alt="Logotipo da empresa 'Iodo Global'">
+                        </div>
+                        <div class="entrarConta">
+                            <div class="contaHoverWrapper">
+                                <a href="">
+                                    <button class="contaBtn">
+                                        <span>
+                                            <i class="bi bi-person-circle"></i>
+                                            Entrar com ContaIG
+                                        </span>
+                                    </button>
+                                </a>  
+                                <div class="megaPainelConta">
+                                    <div class="painelHeader">
+                                        <h4>Conta<strong class="igMark">IG</strong></h4>
+                                        <p>Tenha acesso a conteúdo exclusivos</p>
+                                    </div>
+                                    <div class="painelCarrossel">
+                                        <div class="mini-card-item">IG</div>
+                                        <div class="mini-card-item">IG+</div>
+                                    </div>
+                                    <div class="painelFooter">
+                                        <a href="/login">
+                                            <button class="btnEntrarConta"><span>Entrar</span></button>
+                                        </a>
+                                        <a href="/login">
+                                            <button class="btnCriarConta"><span>Criar uma conta</span></button>
+                                        </a>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="offcanvas offcanvas-start offcanvas-definition" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="nav d-none" id="offcanvas-tabs" role="tablist">
+        <button class="nav-link active" id="menu-principal-tab" data-bs-toggle="tab" data-bs-target="#menu-principal" type="button" role="tab"></button>
+        <button class="nav-link" id="menu-categorias-tab" data-bs-toggle="tab" data-bs-target="#menu-categorias" type="button" role="tab"></button>
+    </div>
+    <div class="tab-content h-100">
+        <div class="tab-pane fade show active h-100" id="menu-principal" role="tabpanel" aria-labelledby="menu-principal-tab">
+        <div class="offcanvas-body">
+            <ul class="list-group list-group-flush">
+            <a class="list-group-item" href="#" onclick="document.getElementById('menu-categorias-tab').click(); return false;">
+                <li class="d-flex justify-content-between align-items-center">
+                <span class="textoMenu">Categorias</span>
+                <i class="bi bi-chevron-right chevronColor"></i>
+                </li>
+            </a>
+            </ul>
+            <div class="miniDivisor"></div>
+            <ul class="list-group list-group-flush">
+            <a class="list-group-item" href="#">
+                <li class="d-flex justify-content-between align-items-center">
+                <span class="textoMenu">Sobre o Iodo Global</span>
+                </li>
+            </a>
+            </ul>
+            <ul class="list-group list-group-flush">
+            <a class="list-group-item" href="#">
+                <li class="d-flex justify-content-between align-items-center">
+                <span class="textoMenu">Entre em contato</span>
+                </li>
+            </a>
+            </ul>
+            <ul class="list-group list-group-flush">
+            <a class="list-group-item" href="#">
+                <li class="d-flex justify-content-between align-items-center">
+                <span class="textoMenu">Termos de uso do IG</span>
+                </li>
+            </a>
+            </ul>
+            <div class="miniDivisor"></div>
+            <ul class="list-group list-group-flush">
+            <a class="list-group-item" href="#">
+                <li class="listNone">
+                <i class="bi bi-person-circle" style="color: gray; font-size: 18px;"></i>
+                <span class="loginMenu">Acesse sua conta</span>
+                <span class="singupMenu">ou cadastre-se grátis</span>
+                </li>
+            </a>
+            </ul>
+        </div>
+        </div>
+        <div class="tab-pane fade h-100" id="menu-categorias" role="tabpanel" aria-labelledby="menu-categorias-tab">
+        <div class="offcanvas-header">
+            <button type="button" class="btn buttonGap" onclick="document.getElementById('menu-principal-tab').click()">
+            <i class="bi bi-chevron-left chevronColor"></i><span class="voltaMenu">Menu IG</span>
+            </button>
+        </div>
+        <div class="miniDivisor"></div>
+        <div>
+            <ul class="removeUlMark">
+            <li class="tituloCategoriaMenu">
+                <span class="tituloCategoriaMenu">Categorias</span>
+            </li>
+            </ul>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group list-group-flush">
+            <a class="list-group-item" href="">
+                <li class="d-flex">
+                <span class="textoMenu">Informativo</span>
+                </li>
+            </a>
+            <a class="list-group-item" href="">
+                <li class="d-flex">
+                <span class="textoMenu">Saúde</span>
+                </li>
+            </a>
+            <a class="list-group-item" href="">
+                <li class="d-flex">
+                <span class="textoMenu">Tecnologia</span>
+                </li>
+            </a>
+            <a class="list-group-item" href="">
+                <li class="d-flex">
+                <span class="textoMenu">Economia</span>
+                </li>
+            </a>
+            <a class="list-group-item" href="">
+                <li class="d-flex">
+                <span class="textoMenu">Educação</span>
+                </li>
+            </a>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+    <main class="mainContainer">
+        <div class="cardsPrincipais">
+            <div class="cardMaior">
+                <h4 class="topicoMateria">Informativo</h4>
+                <div class="spacerItem"></div>
+                <h1 class="tituloMateria">Iodo: A evolução histórica do elemento, de remédio universal a nutriente essencial</h1>
+                <h3 class="subtituloMateria">Como uma descoberta acidental mudou a medicina e a saúde global</h3>
+            </div>
+            <div class="cardMaior">
+                <h4 class="topicoMateria">Saúde</h4>
+                <div class="spacerItem"></div>
+                <h1 class="tituloMateria">Como o Iodo pode ajudar o seu corpo a ter um melhor desempenho?</h1>
+                <h3 class="subtituloMateria">O Iodo, nas medidas corretas, pode...</h3>
+            </div>
+        </div>
+        <section class="conteudoRolavel">
+            <div class="materias">
+                <div class="conteudo">
+                    <div>
+                        <a href="">
+                            <img class="imagemConteudo" src="/img/imagemConteudo/estudantes-quimica-iodo.jpg" alt="Arroz feijão grelhado frango steak salada">
+                        </a>
+                    </div>
+                    <div class="spacerText">
+                        <span class="topicoMateria">Educação</span>
+                        <a class="removeUnderscore" href="">
+                            <h1 class="tituloConteudo">Do laboratório para a cozinha: experimento com iodo vira febre entre estudantes de química</h1>
+                        </a>
+                        <ul>
+                            <a class="removeUnderscore" href="">
+                                <li class="subtituloConteudo">
+                                    Alunos usam o elemento químico para testar a presença de amido em alimentos do dia a dia.
+                                </li>
+                            </a>
+                            <a class="removeUnderscore" href="">
+                                <li class="subtituloConteudo">
+                                    Atividade prática ajuda a fixar conceitos da tabela periódica de forma divertida.
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="conteudo">
+                    <div>
+                        <img class="imagemConteudo" src="/img/imagemConteudo/propulsor-iodo.jpg" alt="Arroz feijão grelhado frango steak salada">
+                    </div>
+                    <div class="spacerText">
+                        <span class="topicoMateria">Tecnologia</span>
+                        <h1 class="tituloConteudo">Cientistas testam novos propulsores à base de iodo para satélites em órbita da Terra</h1>
+                        <ul>
+                            <a class="removeUnderscore" href="">
+                                <li class="subtituloConteudo">
+                                    Alternativa ao gás xenônio promete baratear as viagens espaciais e tornar a exploração do cosmos mais sustentável.
+                                </li>
+                            </a>
+                            <a class="removeUnderscore" href="">
+                                <li class="subtituloConteudo">
+                                    Primeiros testes apresentaram resultados promissores.
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="conteudo">
+                    <div>
+                        <img class="imagemConteudo" src="/img/imagemConteudo/gravidez-iodo.jpg" alt="Arroz feijão grelhado frango steak salada">
+                    </div>
+
+                    <div class="spacerText">
+                        <span class="topicoMateria">Saúde</span>
+                        <h1 class="tituloConteudo">Falta de iodo na gestação pode afetar QI dos bebês, alerta Organização Mundial da Saúde</h1>
+                        <ul>
+                            <a class="removeUnderscore" href="">
+                                <li class="subtituloConteudo">
+                                    Estudos recentes apontam que a deficiência do mineral na gravidez prejudica o desenvolvimento cerebral do feto.
+                                </li>
+                            </a>
+                            <a class="removeUnderscore" href="">
+                                <li class="subtituloConteudo">
+                                    Especialistas reforçam a importância do consumo do sal iodado.
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="conteudo">
+                    <div>
+                        <img class="imagemConteudo" src="/img/imagemConteudo/valor-elevado-iodo.jpg" alt="Arroz feijão grelhado frango steak salada">
+                    </div>
+
+                    <div class="spacerText">
+                        <span class="topicoMateria">Economia</span>
+                        <h1 class="tituloConteudo">Preço do iodo atinge recorde no mercado internacional após alta demanda na indústria farmacêutica</h1>
+                        <ul>
+                            <a class="removeUnderscore" href="">
+                                <li class="subtituloConteudo">
+                                    Alta na procura por antissépticos e contrastes radiológicos pressiona o valor da matéria-prima; Chile lidera as exportações mundiais.
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="conteudo">
+                    <div>
+                        <img class="imagemConteudo" src="/img/imagemConteudo/agua-limpa.png" alt="Arroz feijão grelhado frango steak salada">
+                    </div>
+
+                    <div class="spacerText">
+                        <span class="topicoMateria">Tecnologia</span>
+                        <h1 class="tituloConteudo">Nova tecnologia de purificação de água à base de iodo promete salvar vidas em áreas isoladas</h1>
+                        <ul>
+                            <a class="removeUnderscore" href="">
+                                <li class="subtituloConteudo">
+                                    Dispositivo de baixo custo utiliza propriedades antimicrobianas do mineral para tornar a água potável instantaneamente.
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="guiaRapido">
+                <div class="leiaTambem">
+                    <div class="leiaLabel">
+                        <span>Leia também ⬇️</span>
+                    </div>
+                    <div class="leiaMateria">
+                        <div>
+                            <a href="">
+                                <img class="imagemMateria" src="/img/imagemConteudo/iodo-obrigatorio-brasil.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="materiaTexto">
+                            <a class="removeUnderscore" href="">
+                                <h1 class="materiaLabel">Fortificação obrigatória: por que o sal de cozinha brasileiro recebe iodo desde a década de 1950?</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="miniDivisor"></div>
+                    <div class="leiaMateria">
+                        <div>
+                            <a href="">
+                                <img class="imagemMateria" src="/img/imagemConteudo/iodo-vapor-roxo.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="materiaTexto">
+                            <a class="removeUnderscore" href="">
+                                <h1 class="materiaLabel">Do sólido ao vapor roxo: a física por trás da sublimação dos cristais de iodo</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="miniDivisor"></div>
+                    <div class="leiaMateria">
+                        <div>
+                            <a href="">
+                                <img class="imagemMateria" src="/img/imagemConteudo/iodo-radiografia.webp" alt="">
+                            </a>
+                        </div>
+                        <div class="materiaTexto">
+                            <a class="removeUnderscore" href="">
+                                <h1 class="materiaLabel">Além do antisséptico: como o iodo revolucionou os exames de tomografia e radiografia</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="maisLido">
+                    <div class="maisLabel">
+                        <span>
+                            <i class="bi bi-graph-up-arrow" style="color: #3B44F6"></i>
+                            Mais <strong class="bold">lidos</strong>
+                        </span>
+                    </div>
+                    <div class="maisLidoMateria">
+                        <div>
+                            <h1 class="ranking">1</h1>
+                        </div>
+                        <div class="maisLidoTexto">
+                            <a class="removeUnderscore" href="">
+                                <h1 class="maisLidoLabel">Iodo: A evolução histórica do elemento, de remédio universal a nutriente essencial</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="miniDivisor"></div>
+                    <div class="maisLidoMateria">
+                        <div>
+                            <h1 class="ranking">2</h1>
+                        </div>
+                        <div class="maisLidoTexto">
+                            <a class="removeUnderscore" href="">
+                                <h1 class="maisLidoLabel">A química por trás da sua tela: como o iodo viabilizou os displays flexíveis de celulares dobráveis e notebooks</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="miniDivisor"></div>
+                    <div class="maisLidoMateria">
+                        <div>
+                            <h1 class="ranking">3</h1>
+                        </div>
+                        <div class="maisLidoTexto">
+                            <a class="removeUnderscore" href="">
+                                <h1 class="maisLidoLabel">Cientistas testam novos propulsores à base de iodo para satélites em órbita da Terra</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="miniDivisor"></div>
+                    <div class="maisLidoMateria">
+                        <div>
+                            <h1 class="ranking">4</h1>
+                        </div>
+                        <div class="maisLidoTexto">
+                            <a class="removeUnderscore" href="">
+                                <h1 class="maisLidoLabel">Painéis solares do futuro: pesquisa demonstra como o iodo aumenta a eficiência de células fotovoltaicas de perovskita</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="miniDivisor"></div>
+                    <div class="maisLidoMateria">
+                        <div>
+                            <h1 class="ranking">5</h1>
+                        </div>
+                        <div class="maisLidoTexto">
+                            <a class="removeUnderscore" href="">
+                                <h1 class="maisLidoLabel">Escudo contra a radiação: como o iodeto de potássio protege a tireoide humana em emergências nucleares</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="miniDivisor"></div>
+                    <div class="maisLidoMateria">
+                        <div>
+                            <h1 class="ranking">6</h1>
+                        </div>
+                        <div class="maisLidoTexto">
+                            <a class="removeUnderscore" href="">
+                                <h1 class="maisLidoLabel">Fazer chover é possível? Como a ciência usa o iodeto de prata para induzir tempestades em áreas de seca</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="miniDivisor"></div>
+                    <div class="maisLidoMateria">
+                        <div>
+                            <h1 class="ranking">7</h1>
+                        </div>
+                        <div class="maisLidoTexto">
+                            <a class="removeUnderscore" href="">
+                                <h1 class="maisLidoLabel">Das profundezas do mar: o papel das algas marinhas como as maiores acumuladoras naturais de iodo do planeta</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerBox">
+            <div class="footerSlogan">
+                <div class="footerLogo">
+                    <img src="" alt="">
+                </div>
+                <div class="footerSloganLabel">
+                    <h6 class="sloganLabel">Últimas notícias</h6>
+                </div>
+            </div>
+            <div class="bottomArea">
+                <div>
+                    <p class="copyText">&copy; Copyright 2026 Iodo Global Comunicações e Participações S.A.</p> 
+                </div>
+                <div class="adicionalFooter">
+                    <div class="itemAidiconal">
+                        <a class="removeUnderscore" href=""><span class="titulosAdicionais">política de privacidade</span></a>
+                        <div class="miniDivisorVertical"></div>
+                    </div>
+                    <div class="itemAidiconal">
+                        <a class="removeUnderscore" href=""><span class="titulosAdicionais">minha conta</span></a>
+                        <div class="miniDivisorVertical"></div>
+                    </div>
+                    <div>
+                        <a class="removeUnderscore" href=""><span class="titulosAdicionais">anuncie conosco</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

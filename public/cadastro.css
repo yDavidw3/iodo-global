@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #363636;
+    background-color: #FFFFFF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+}
+.layoutContainer{
+    width: 100%;
+    padding: 24px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.stackContainer1{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 64px;
+}
+.headerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 32px;
+    margin-bottom: 8px;
+}
+.backButtonContainer{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.removeUnderscore{
+    text-decoration: none;
+}
+.backButton{
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #3B44F6;
+    font: inherit;
+    font-weight: 700;
+}
+.iconChevron{
+    flex-shrink: 0;
+    max-width: none;
+    color: #3B44F6;
+    width: 10px;
+    display: block;
+}
+.brandLogo{
+    color: #363636;
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0 auto;
+    letter-spacing: -.2rem;
+}
+.brandLogoMark{
+    color: #3B44F6;
+}
+.layoutContent{
+    max-width: 496px;
+    margin: 0 auto;
+}
+.stackContainer2{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+.stackContainer3{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 24px;
+}
+.headingH2{
+    color: #363636;
+    overflow-wrap: break-word;
+    text-align: left;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.styledText{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+.styledLink{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #3B44F6;
+}
+.stackContainer4{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+}
+.stackContainer5{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+}
+.stackContainer6{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 12px;
+}
+.inputLabel{
+    color: #8E8E8E;
+}
+.inputContainer{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #8E8E8E;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+.styledInput{
+    height: 100%;
+    padding: 0 12px;
+    border: none;
+    flex: 1 1 0%;
+    font-size: 1.125rem;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #363636;
+    background: inherit;
+}
+input{
+    border: none;
+    outline: none;
+}
+.hiddenContainer{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0px 0px 0px 0px);
+    clip-path: inset(50%);
+    border: 0px none;
+    margin: -1px;
+    padding: 0px;
+    height: 1px;
+    width: 1px;
+    white-space: nowrap;
+}
+input[type="date"]{
+    color: #8E8E8E;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  visibility: hidden;
+}
+.baseButton{
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-feature-settings: "ss01", "ss02" 0, "ss03" 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    font: inherit;
+}
+.primaryButton{
+    background-color: #3B44F6;
+    color: #FFFFFF;
+}
+.termsContainer{
+    padding: 16px;
+    border-radius: 8px;
+    background-color: rgb(245, 245, 245);
+    color: #363636;
+}
+.offcanvas-body{
+    padding: 24px 24px 0 24px !important;
+}
+.offcanvas-header{
+    gap: 200px !important;
+}
+.btn-close{
+    margin-top: 0 !important;
+    padding: 15px 25px 25px 15px !important;
+    height: 0 !important;
+    width: 0 !important;
+}
+.btn-close:hover{
+    border-radius: 32px;
+    background-color: #D9D9D9;
+}
+.emptyArea{
+    content: "";
+    width: 100%;
+}
+.spacerItem{
+    content: "";
+    height: 15px;
+}
