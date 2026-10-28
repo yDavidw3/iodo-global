@@ -54,9 +54,15 @@ section{
     line-height: 1.2;
 }
 .subtitulo{
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-size: 18px;
     color: #5B2F91;
+}
+.infoTrabalho{
+    font-size: 16px;
+}
+.infoTrabalho + .infoTrabalho{
+    margin-top: 0;
 }
 h2{
     margin-top: 28px;
@@ -65,14 +71,32 @@ h2{
     font-weight: 700;
     line-height: 1.25;
 }
+.subtopico{
+    margin-top: 16px;
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #5B2F91;
+}
 p{
     font-size: 17px;
 }
 p + p{
     margin-top: 14px;
 }
+.listaTopico{
+    margin: 8px 0 14px 24px;
+    font-size: 17px;
+}
+.listaTopico li + li{
+    margin-top: 8px;
+}
+.rotuloImagem{
+    margin-top: 14px;
+    font-weight: 700;
+}
 .figura{
-    margin: 20px 0;
+    margin: 12px 0 20px;
 }
 .imagem{
     display: block;
@@ -101,6 +125,22 @@ p + p{
     white-space: nowrap;
 }
 .linkImage{
+    color: #5B2F91;
+    overflow-wrap: anywhere;
+}
+.listaFontes{
+    list-style: none;
+    margin-top: 8px;
+}
+.listaFontes li + li{
+    margin-top: 12px;
+}
+.tituloFonte{
+    font-size: 16px;
+    font-weight: 600;
+}
+.linkFonte{
+    font-size: 14px;
     color: #5B2F91;
     overflow-wrap: anywhere;
 }
@@ -202,7 +242,8 @@ footer p + p{
     h2{
         font-size: 20px;
     }
-    p{
+    p,
+    .listaTopico{
         font-size: 16px;
     }
     .imagem,
